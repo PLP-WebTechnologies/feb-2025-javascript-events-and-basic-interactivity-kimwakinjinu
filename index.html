@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Opinion Survey</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Share Your Sports Opinions!</h1>
+            <p>Tell us what you think about different sports.</p>
+        </header>
+
+        <form id="sports-survey-form">
+            <section class="question-section">
+                <h2>Question 1: Favorite Sport to Watch?</h2>
+                <div class="options">
+                    <label><input type="radio" name="q1" value="football"> Football (Soccer)</label><br>
+                    <label><input type="radio" name="q1" value="basketball"> Basketball</label><br>
+                    <label><input type="radio" name="q1" value="tennis"> Tennis</label><br>
+                    <label><input type="radio" name="q1" value="other"> Other</label>
+                </div>
+                <span class="error-message"></span>
+            </section>
+
+            <section class="question-section">
+                <h2>Question 2: Most Exciting Sport?</h2>
+                <div class="options">
+                    <label><input type="radio" name="q2" value="hockey"> Ice Hockey</label><br>
+                    <label><input type="radio" name="q2" value="athletics"> Athletics (Track & Field)</label><br>
+                    <label><input type="radio" name="q2" value="motorsport"> Motorsport (F1, etc.)</label><br>
+                    <label><input type="radio" name="q2" value="other"> Other</label>
+                </div>
+                <span class="error-message"></span>
+            </section>
+
+            <section class="question-section">
+                <h2>Question 3: Sport You Play Most Often?</h2>
+                <div class="options">
+                    <label><input type="radio" name="q3" value="running"> Running</label><br>
+                    <label><input type="radio" name="q3" value="swimming"> Swimming</label><br>
+                    <label><input type="radio" name="q3" value="cycling"> Cycling</label><br>
+                    <label><input type="radio" name="q3" value="none"> None</label>
+                </div>
+                <span class="error-message"></span>
+            </section>
+
+            <section>
+                <h2>Stay Updated?</h2>
+                <p>Enter your email if you'd like to hear about survey results (optional).</p>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <span class="error-message"></span>
+            </section>
+
+            <button type="submit" id="submit-survey-btn">Submit Survey</button>
+        </form>
+
+        <div id="thank-you-message" class="hidden">
+            <h2>Thank You!</h2>
+            <p>Your opinions have been recorded.</p>
+        </div>
+    </main>
+</body>
+</html>
+
